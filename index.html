@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Biblioteca</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Mini Biblioteca</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Adicionar Item</h2>
+      <form id="item-form">
+        <label for="type">Tipo:</label>
+        <select id="type" name="type" required>
+          <option value="">--Selecione--</option>
+          <option value="book">Livro</option>
+          <option value="magazine">Revista</option>
+          <option value="movie">Filme</option>
+        </select>
+
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="year">Ano:</label>
+        <input type="number" id="year" name="year" required>
+
+        <!-- Campos específicos por tipo -->
+        <div id="extra-fields"></div>
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <!-- Lista de itens da biblioteca -->
+    <section class="list-section">
+      <h2>Itens na Biblioteca</h2>
+      <div id="item-list">
+        <!-- Os itens adicionados serão exibidos aqui -->
+      </div>
+    </section>
+  </main>
+
+  <script src="./src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #4a4aef;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #2c2c2c;
+  }
+  
+  .form-section,
+  .list-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  form input,
+  form select,
+  form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    background-color: #4a4aef;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #3737c5;
+  }
+  
+  /* Lista de itens */
+  #item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .item-card {
+    background-color: #e8e8ff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 6px solid #4a4aef;
+  }
+  
+  .item-card p {
+    margin-bottom: 5px;
+  }
+  
+  .item-card button {
+    margin-top: 10px;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a4aef;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .item-card button:hover {
+    background-color: #3737c5;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+  
+    form input,
+    form select,
+    form button {
+      font-size: 0.95rem;
+    }
+  }
+  
